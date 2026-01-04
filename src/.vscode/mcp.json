@@ -1,0 +1,20 @@
+{
+  "servers": [
+    {
+      "name": "idea-mcp",
+      "command": "python",
+      "args": ["-m", "src.idea_mcp_server"],
+      "env": {
+        "PYTHONUTF8": "1"
+      }
+    },
+    {
+      "name": "github",
+      "type": "remote",
+      "url": "https://mcp.github.com", 
+      "env": {
+        "GITHUB_TOKEN": "${env:GITHUB_TOKEN}"
+      }
+    }
+  ]
+}

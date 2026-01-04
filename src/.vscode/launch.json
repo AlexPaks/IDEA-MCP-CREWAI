@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Idea MCP Server (API mode)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/idea_mcp_server.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Run Idea MCP Server (CLI mode)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/idea_mcp_server.py",
+      "console": "integratedTerminal",
+      "args": ["--cli"]
+    }
+  ]
+}
